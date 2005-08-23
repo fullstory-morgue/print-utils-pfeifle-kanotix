@@ -1,0 +1,1 @@
+getpjlinfo.sh

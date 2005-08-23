@@ -1,0 +1,7 @@
+printeradmin=Administrator
+adminpasswd=not4you
+nthost=192.168.17.1
+smbadminpasswd=knoppix
+smbprinteradmin=knoppix
+smbhost=knoppix
+

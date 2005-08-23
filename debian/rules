@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+DEB_AUTO_UPDATE_DEBIAN_CONTROL := yes
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+common-install-arch common-install-indep:: common-install-impl
+common-install-impl::
+	install -m 0755 -d $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/bin
+	install -m 0755    $(CURDIR)/release_pjl/getpjlinfo.sh $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/bin/
+	dh_link usr/bin/getpjlinfo.sh usr/bin/getpagecounter.sh
+	dh_link usr/bin/getpjlinfo.sh usr/bin/getpjloptions.sh
+	dh_link usr/bin/getpjlinfo.sh usr/bin/holepjloptionen.sh
+	dh_link usr/bin/getpjlinfo.sh usr/bin/holeseitenzaehler.sh
+	install -m 0755 -d $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/share/$(DEB_SOURCE_PACKAGE)
+	install -m 0755    $(CURDIR)/vampire/functions-to-get-drivers.sh $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/share/$(DEB_SOURCE_PACKAGE)/
+	install -m 0755    $(CURDIR)/vampire/print-utils-run.sh $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/bin/
+	install -m 0755    $(CURDIR)/vampire/print-utils-get-functions.sh $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/bin/
+	install -m 0755    $(CURDIR)/vampire/print-utils-get-help.sh $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/bin/
+
