@@ -1,3 +1,9 @@
+print-utils-pfeifle-kanotix (0.1.5) unstable; urgency=low
+
+  * fix version number for native packaging.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Mar 2006 01:08:16 +0100
+
 print-utils-pfeifle-kanotix (0.1-4) unstable; urgency=low
 
   * knoppix --> kanotix transition, thanks to x-un-i.
