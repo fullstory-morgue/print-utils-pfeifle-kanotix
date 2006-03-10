@@ -1,3 +1,9 @@
+print-utils-pfeifle-kanotix (0.1.6) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Mar 2006 01:14:53 +0100
+
 print-utils-pfeifle-kanotix (0.1.5) unstable; urgency=low
 
   * fix version number for native packaging.
