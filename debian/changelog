@@ -1,8 +1,17 @@
+print-utils-pfeifle-kanotix (0.1-4) unstable; urgency=low
+
+  * knoppix --> kanotix transition, thanks to x-un-i.
+  * remove cdbs auto-update feature.
+  * bump compat level to 5.
+  * clean up debian/rules a bit.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Mar 2006 01:05:07 +0100
+
 print-utils-pfeifle-kanotix (0.1-3) unstable; urgency=low
 
   * packaging overhaul.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 23 Aug 2005 18:08:13 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Mar 2006 01:05:03 +0100
 
 print-utils-pfeifle-kanotix (0.1-2) unstable; urgency=low
 

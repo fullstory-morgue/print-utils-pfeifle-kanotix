@@ -1,11 +1,8 @@
 #!/usr/bin/make -f
 
-DEB_AUTO_UPDATE_DEBIAN_CONTROL := yes
-
 include /usr/share/cdbs/1/rules/debhelper.mk
 
-common-install-arch common-install-indep:: common-install-impl
-common-install-impl::
+build/print-utils-pfeifle-kanotix::
 	install -m 0755 -d $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/bin
 	install -m 0755    $(CURDIR)/release_pjl/getpjlinfo.sh $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/bin/
 	dh_link usr/bin/getpjlinfo.sh usr/bin/getpagecounter.sh

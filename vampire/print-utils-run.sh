@@ -1,6 +1,6 @@
 #!/bin/bash
 source /usr/share/print-utils-pfeifle-kanotix/functions-to-get-drivers.sh
-source xp_nthost_knoppix_smbhost
+source xp_nthost_live_smbhost
 fetchenumdrivers3listfromNThost      # repeat, if no success at first
 createdrivernamelist 
 createprinterlistwithUNCnames       # repeat, if no success at first
